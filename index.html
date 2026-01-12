@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Sip Gym Admin</title>
+    
+    <!-- Domain Integration -->
+    <link rel="canonical" href="https://sipgymnhabe.phkglobal.com/" />
+    <meta name="description" content="Hệ thống quản lý Sip Gym Nhà Bè.">
+    
+    <!-- PWA Settings for iOS (Hide Address Bar) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Sip Gym Admin">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="https://phukienlimousine.vn/wp-content/uploads/2025/12/LOGO_SIP_GYM_pages-to-jpg-0001-removebg-preview.png">
+    <link rel="icon" type="image/png" href="https://phukienlimousine.vn/wp-content/uploads/2025/12/LOGO_SIP_GYM_pages-to-jpg-0001-removebg-preview.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- AI Face Recognition Library -->
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            background-color: #f3f4f6;
+            overscroll-behavior-y: contain;
+            margin: 0;
+            padding: 0;
+        }
+        #root {
+            min-height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* PWA styles */
+        @media all and (display-mode: standalone) {
+          body {
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
+          }
+        }
+    </style>
+    
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-router": "https://esm.sh/react-router@^7.11.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+    "firebase/analytics": "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js",
+    "firebase/database": "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js",
+    "firebase/": "https://esm.sh/firebase@^12.7.0/",
+    "react-qr-code": "https://esm.sh/react-qr-code@2.0.15",
+    "react-easy-crop": "https://esm.sh/react-easy-crop@5.0.7",
+    "tslib": "https://esm.sh/tslib@2.6.2"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
